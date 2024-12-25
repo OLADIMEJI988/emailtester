@@ -1,0 +1,24 @@
+{
+  "name": "emailtester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "build": "netlify deploy --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "netlify-lambda": "^2.0.16",
+    "nodemailer": "^6.9.16",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.38.1",
+    "nodemon": "^3.1.9"
+  }
+}
