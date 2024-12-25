@@ -8,11 +8,11 @@ const PORT = process.env.PORT || 5000;
 app.use(express.static('frontend'));
 app.use(express.json())
 
-app.get('/', (req, res)=>{
+app.get('https://emailtester-backend.onrender.com', (req, res)=>{
     res.sendFile(__dirname + '/frontend/index.html')
 })
 
-app.post('/', (req, res)=>{
+app.post('https://emailtester-backend.onrender.com', (req, res)=>{
     console.log(req.body);
 
     const transporter = nodemailer.createTransport({
